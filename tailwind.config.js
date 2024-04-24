@@ -10,6 +10,9 @@ module.exports = {
           "linear-gradient(86.88deg, #20e3b2 1.38%, #2cccff, #fc2872)",
       },
     },
+    fontFamily: {
+      div: ["Rye"],
+    },
   },
   varianrs: {
     extend: {},
