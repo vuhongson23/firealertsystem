@@ -71,7 +71,7 @@ const Form = () => {
             placeholder="Enter your name"
             onChange={handleChange}
           />
-          {nameError}
+          <div className="text-red-600">{nameError}</div>
         </div>
         <div className="flex flex-col">
           <input
@@ -81,10 +81,13 @@ const Form = () => {
             placeholder="Enter your email address"
             onChange={handleChange}
           />
-          {emailError}
+          <div className="text-red-600">{emailError}</div>
         </div>
         {/* <input type="checkbox" name="hobby" onChange={handleChange} /> */}
-        <button type="submit" className="p-3 rounded-lg text-white bg-blue-500">
+        <button
+          type="submit"
+          className="p-3 rounded-lg text-white bg-blue-500 h-[65px]"
+        >
           Submit
         </button>
       </form>

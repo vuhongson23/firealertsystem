@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 import useHandleChange from "../hooks/useHandleChange";
 
-const Form = () => {
+const Form3 = () => {
   // const [fullname, setFullName] = useState("");
   // const [message, setMessage] = useState("");
   // const [country, setCountry] = useState("");
@@ -98,7 +98,7 @@ const Form = () => {
             placeholder="Enter your name"
             onChange={handleChange}
           />
-          {state.nameError}
+          <div className="text-red-600">{state.nameError}</div>
         </div>
         <div className="flex flex-col">
           <input
@@ -108,10 +108,13 @@ const Form = () => {
             placeholder="Enter your email address"
             onChange={handleChange}
           />
-          {state.emailError}
+          <div className="text-red-600">{state.emailError}</div>
         </div>
         {/* <input type="checkbox" name="hobby" onChange={handleChange} /> */}
-        <button type="submit" className="p-3 rounded-lg text-white bg-blue-500">
+        <button
+          type="submit"
+          className="p-3 rounded-lg text-white bg-blue-500 h-[65px]"
+        >
           Submit
         </button>
       </form>
@@ -132,4 +135,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default Form3;

@@ -1,12 +1,13 @@
-import "./App.css";
-import AlertFireSystem from "./components/alertfiresystem/AlertFireSystem";
+import React from "react";
+import FirebaseAuth from "./firebase/FirebaseAuth";
+// import FirebaseAuthV2 from "./firebase/FirebaseAuthV2";
 
-function App() {
+const App = () => {
   return (
     <div>
-      <AlertFireSystem></AlertFireSystem>
+      <FirebaseAuth></FirebaseAuth>
     </div>
   );
-}
+};
 
 export default App;
